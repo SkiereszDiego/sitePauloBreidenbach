@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Bach Arquitetura</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="container">	
+
+		<nav class="menu_principalGaleria" id="navBar">
+			<ul class="itens_menu">
+				<li class="item_menu"><a href="index.html"><img id="logo" src="img/logoHome.jpg"  alt="logodoSite" title="Home"></a></li>
+				<li class="menu-separatorGaleria item_menu">•</li>
+				<li class="item_menu"><a href="index.html#idProjetos">PROJETOS</a></li>
+				<li class="item_menu"><a href="index.html#idSobre">SOBRE</a></li>
+				<li class="item_menu"><a href="index.html#idContato">CONTATO</a></li>			
+			</ul>
+		</nav>	
+
+		<main class="galeria">
+			<!--Caixinha com a descrição do Projeto -->
+			<article class="DescricaoProjeto">
+				<h3 class="descricaoTitulo">RESIDENCIAL TETRIS</h3>
+				<p>O conceito do Residencial Tetris surgiu da ideia de dinamizar o ortogonal. A partir da composição de quadrados formaram-se desenhos que compõem caminhos e estares na implantação.<br><br>A ideia de composição de formas se traduz também nos apartamentos que se encaixam, fazendo com que todas as unidades possam ter vistas para o Rio Guaíba e para o interior do condomínio, valorizando a iluminação e a ventilação cruzada.</p>
+			</article>
+		
+			<!--Lista com as img em miniaturas -->
+			<figure class="minGaleria">
+			<!-- Lista com os itens direcionado para div lbox -->
+				<ul id="idLista">
+					<li><a href="#img1"><img src="img/galeria_3/3_1.jpg" class="min" alt="Implantação"></a></li>
+					<li><a href="#img2"><img src="img/galeria_3/3_2.jpg" class="min" alt="Caminho 01"></a></li>
+					<li><a href="#img3"><img src="img/galeria_3/3_3.jpg" class="min" alt="Caminho 02"></a></li>
+					<li><a href="#img4"><img src="img/galeria_3/3_4.jpg" class="min" alt="Caminho 03"></a></li>
+					<li><a href="#img5"><img src="img/galeria_3/3_5.jpg" class="min" alt="Academia"></a></li>
+					<li><a href="#img6"><img src="img/galeria_3/3_6.jpg" class="min" alt="Salão de festas"></a></li>
+					<li><a href="#img7"><img src="img/galeria_3/3_7.jpg" class="min" alt="Cobertura"></a></li>
+					<li><a href="#img8"><img src="img/galeria_3/3_8.jpg" class="min" alt="Perspectiva explodida"></a></li>
+					<li><a href="#img9"><img src="img/galeria_3/3_9.jpg" class="min" alt="Sala tipo A"></a></li>
+					<li><a href="#img10"><img src="img/galeria_3/3_10.jpg" class="min" alt="Dormitório"></a></li>
+					<li><a href="#img11"><img src="img/galeria_3/3_11.jpg" class="min" alt="Sala tipo B"></a></li>
+					<li><a href="#img12"><img src="img/galeria_3/3_12.jpg" class="min" alt="Sala Estar íntimo"></a></li>
+					<li><a href="#img13"><img src="img/galeria_3/3_13.jpg" class="min" alt="Planta baixa tipo A 01"></a></li>
+					<li><a href="#img14"><img src="img/galeria_3/3_14.jpg" class="min" alt="Planta baixa tipo A 02"></a></li>
+					<li><a href="#img15"><img src="img/galeria_3/3_15.jpg" class="min" alt="Corte tipo A"></a></li>
+					<li><a href="#img16"><img src="img/galeria_3/3_16.jpg" class="min" alt="Planta baixa tipo B 01"></a></li>
+					<li><a href="#img17"><img src="img/galeria_3/3_17.jpg" class="min" alt="Planta baixa tipo B 02"></a></li>
+					<li><a href="#img18"><img src="img/galeria_3/3_18.jpg" class="min" alt="Corte tipo B"></a></li>
+				</ul>
+			</figure>
+			
+			<!-- #######  Ligth box para cada imagem.####### 
+			Tutorial de Lightbox pego do video: https://www.youtube.com/watch?v=jiS1hxKfFyY
+			Primeira imagem 
+			-->
+
+			<div class="lbox" id="img1">
+				<div class="box_img">
+					<a href="#img18" class="btn" id="prev">&#171;</a>
+					<!--O botão close fica sem link para ao clicar ele volte ao normal-->
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_1.jpg" alt="Implantação">
+					<!--O botão next ira direcionar para img 02 que esta localizada na lbox com id img2-->
+					<a href="#img2" class="btn" id="next">&#187;</a>				
+				</div> 
+			</div>
+
+			<!-- Segunda imagem, tomando cuidado em modificar o id e o enderecamento -->
+			<div class="lbox" id="img2">
+				<div class="box_img">
+					<a href="#img1" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_2.jpg" alt="Caminho 01">
+					<a href="#img3" class="btn" id="next">&#187;</a>				
+				</div> 
+			</div>
+
+			<!-- Terceira imagem-->
+			<div class="lbox" id="img3">
+				<div class="box_img">
+					<a href="#img2" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_3.jpg" alt="Caminho 02">
+					<a href="#img4" class="btn" id="next">&#187;</a>				
+				</div> 
+			</div>
+
+			<!-- Quarta imagem -->
+			<div class="lbox" id="img4">
+				<div class="box_img">
+					<a href="#img3" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_4.jpg"  alt="Caminho 03">
+					<a href="#img5" class="btn" id="next">&#187;</a>				
+				</div> 
+			</div>
+
+			
+			<!-- Quinta imagem -->
+			<div class="lbox" id="img5">
+				<div class="box_img">
+					<a href="#img4" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_5.jpg" alt="Academia">
+					<a href="#img6" class="btn" id="next">&#187;</a>					
+				</div> 
+			</div>
+
+		
+			<!-- Sexta imagem -->
+			<div class="lbox" id="img6">
+				<div class="box_img">
+					<a href="#img5" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_6.jpg" alt="Salão de festas">
+					<a href="#img7" class="btn" id="next">&#187;</a>					
+				</div>
+			</div>
+
+			
+			<!-- Setima imagem -->
+			<div class="lbox" id="img7">
+				<div class="box_img">
+					<a href="#img6" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_7.jpg" alt="Cobertura">
+					<a href="#img8" class="btn" id="next">&#187;</a>				
+				</div> 
+			</div>
+
+			
+			<!-- Oitava imagem -->
+			<div class="lbox" id="img8">
+				<div class="box_img">
+					<a href="#img7" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_8.jpg" alt="Perspectiva explodida">
+					<a href="#img9" class="btn" id="next">&#187;</a>				
+				</div> 
+			</div>
+		
+			<!-- Nona imagem -->
+			<div class="lbox" id="img9">
+				<div class="box_img">
+					<a href="#img8" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_9.jpg" alt="Sala tipo A">
+					<a href="#img10" class="btn" id="next">&#187;</a>				
+				</div> 
+			</div>
+
+			<!-- Decima imagem -->
+			<div class="lbox" id="img10">
+				<div class="box_img">
+					<a href="#img9" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_10.jpg" alt="Dormitório">
+					<a href="#img11" class="btn" id="next">&#187;</a>					
+				</div> 
+			</div>
+		
+			<!-- Decima primeira imagem -->
+			<div class="lbox" id="img11">
+				<div class="box_img">
+					<a href="#img10" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_11.jpg" alt="Sala tipo B">
+					<a href="#img12" class="btn" id="next">&#187;</a>					
+				</div> 
+			</div>
+
+			<!-- Decima segunda imagem -->
+			<div class="lbox" id="img12">
+				<div class="box_img">
+					<a href="#img11" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_12.jpg" alt="Sala Estar íntimo">
+					<a href="#img13" class="btn" id="next">&#187;</a>					
+				</div> 
+			</div>
+
+			<!-- Decima terceira imagem -->
+			<div class="lbox" id="img13">
+				<div class="box_img">
+					<a href="#img12" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_13.jpg" alt="Planta baixa tipo A 01">
+					<a href="#img14" class="btn" id="next">&#187;</a>				
+				</div> 
+			</div>
+		
+			<!-- Decima quarta imagem -->
+			<div class="lbox" id="img14">
+				<div class="box_img">
+					<a href="#img13" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_14.jpg" alt="Planta baixa tipo A 02">
+					<a href="#img15" class="btn" id="next">&#187;</a>					
+				</div> 
+			</div>
+			
+			<!-- Decima quinta imagem -->
+			<div class="lbox" id="img15">
+				<div class="box_img">
+					<a href="#img14" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_15.jpg" alt="Corte tipo A">
+					<a href="#img16" class="btn" id="next">&#187;</a>					
+				</div> 
+			</div>
+			
+			<!-- Decima sexta imagem -->
+			<div class="lbox" id="img16">
+				<div class="box_img">
+					<a href="#img15" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_16.jpg" alt="Planta baixa tipo B 01">
+					<a href="#img17" class="btn" id="next">&#187;</a>				
+				</div> 
+			</div>
+		
+			<!-- Decima primeira imagem -->
+			<div class="lbox" id="img17">
+				<div class="box_img">
+					<a href="#img16" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_17.jpg" alt="Planta baixa tipo B 02">
+					<a href="#img18" class="btn" id="next">&#187;</a>				
+				</div> 
+			</div>
+
+			<!-- Decima primeira imagem -->
+			<div class="lbox" id="img18">
+				<div class="box_img">
+					<a href="#img17" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_3/3_18.jpg" alt="Corte tipo B">
+					<a href="#img1" class="btn" id="next">&#187;</a>		
+				</div> 
+			</div>
+
+		</main>
+
+		<!-- REDES SOCIAIS -->
+		<footer class="redeSociais" id="idredeSociais">		
+
+			<a href="https://www.facebook.com/paulo.breidenbach" class="social-link">
+				<img src="img/icone_facebook.png" alt="Facebook Bach Arquitetura">
+			</a>
+			<a href="https://www.instagram.com/bacharquitetura/" class="social-link" >
+				<img src="img/icone_instagram.png" alt="Instagram Bach Arquitetura">
+			</a>
+			<a href="https://twitter.com/paulobach" class="social-link">
+				<img src="img/icone_twitter.png" alt="Twitter Bach Arquitetura">
+			</a>
+			<a href="https://www.behance.com/bacharquitetura/" class="social-link">
+				<img src="img/icone_behance.png" alt="Behance Bach Arquitetura">
+			</a>
+			<a href="https://www.issuu.com/paulobach/" class="social-link">
+				<img src="img/icone_issuu.png" alt="Issuu Bach Arquitetura">
+			</a>
+			
+		</footer>
+	</div>
+</body>
+</html>

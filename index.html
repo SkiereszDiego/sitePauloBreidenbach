@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Bach Arquitetura</title>	
+	<!--Importa a fonte Poppins 200 e 700 do googlefonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+	<!--Importa o google maps com a chave API-->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtxGscHPmZTykodzwagXJdd9cfsqcXSoA&callback=myMap"></script>
+</head>
+
+<body>
+	<!--Caixa que engloba todo o corpo da pagina para ajudar no posicionamento dos elementos-->
+	<div id="container">
+
+		<header class="headerPrincipal"></header>		
+		<nav class="menu_principal" id="navBar">
+				<ul class="itens_menu">
+					<!--LOGO-->
+					<li><a href="index.html"><img id="logo" src="img/logoHome.jpg"  alt="logodoSite" title="Home"></a></li>
+					<!--Separador para gerar espaço entre o logo e os outros links-->					
+					<li class="menu-separator item_menu">•</li>
+					<li class="item_menu"><a href="#idProjetos">PROJETOS</a></li>
+					<li class="item_menu"><a href="#idSobre">SOBRE</a></li>
+					<li class="item_menu"><a href="#idContato">CONTATO</a></li>			
+				</ul>
+		</nav>	
+
+		<main>
+			<!--SEÇÃO DE FRASE-->
+			<section class="frase-title">
+				<article id="idFrase">		
+					<p>Acredito que a Arquitetura vá além da edificação. Em meus projetos, busco traduzir a essência do local nos espaços, de maneira com que as pessoas possam se sentir parte do ambiente. Essa compreensão do espaço traz sensações de pertencimento e bem-estar.</p>
+				</article>				
+			</section>
+
+			<!--SEÇÃO DE LINKS PARA OS PROJETOS-->
+			<section class="menuProjetos">
+				<!--Caixa com o titulo da seção-->
+				<div class="frameTitulo">	
+					<h1>PROJETOS</h1>
+				</div>
+
+				<figure class="projetos" id="idProjetos">
+					<ul id="gallery">				    
+					    <li><a href="galeria_04.html" title="Largo Zumbi dos Palmares"><img src="img/galeria_04.jpg" alt="Largo Zumbi dos Palmares" class="image01"></a></li>
+					    <li><a href="galeria_03.html" title="Residência Tetris"><img src="img/galeria_03.jpg" alt="Residência Tetri"></a></li>
+					    <li><a href="galeria_02.html" title="Vernacular Hotel Design"><img src="img/galeria_02.jpg" alt="Vernacular Hotel Design"></a></li>
+					    <li><a href="galeria_01.html" title="Residências Jazz"><img src="img/galeria_01.jpg" alt="Residências Jazz"></a></li>
+					</ul>
+				</figure>
+			</section>
+
+			<!--SEÇÃO SOBRE COM A DESCRIÇÃO DO ARQUITETO E FOTO-->
+			<section class="sobre-title" id="idSobre">
+				<!--Caixa com o titulo da seção-->
+				<div class="frameTitulo">	
+					<h1>SOBRE</h1>
+				</div>
+				<!--Foto do Estudante de Arq-->
+				<figure id="figuraSobre">
+					<img src="img/fotoSobre.png" alt="Paulo Breidenbach">
+				</figure>
+				<!--Descrição do Estudante-->
+				<article class="sobre-text">
+					<p>Sou estudante de Arquitetura e Urbanismo pela Universidade Federal do Rio Grande do Sul - UFRGS, atualmente cursando xxx semestre. Gosto muito de estudar sobre xxx e criar utilizando de xxxx. </p>
+				</article>
+			</section>
+
+			<!--SEÇÃO CONTATO COM FORMULARIO DE DUVIDAS E OU REQUISIÇÕES DE PROJETOS-->
+			<section class="content" id="idContato" >
+				<!--Caixa com o titulo da seção-->
+				<div class="frameTitulo">	
+					<h1>CONTATO</h1>
+				</div>
+				<!--Caixa onde esta inserido o google maps-->
+				<div id="googleMap"></div>
+				<!--Formulario de contato-->
+				<section class="posicaoForm">
+					<!--Post define qual o metodo de envio do formulario, o action destino dest formulario -->
+					<form name="contato" class="form" method="POST" action="./email.php">
+						<input class="field" name="name" placeholder="Nome">
+						<input class="field" name="email" placeholder="E-mail">
+						<input class="field" name="tel" placeholder="Telefone">
+						<!--list define qual a tag data list vinculada a este campo e value é o dado que vai ser armazenado -->
+						<input list="opcao" class="field" name="Assunto" placeholder="Assunto" >
+							<datalist id="opcao">
+								<option value="Solicitação de Projeto"></option>	
+								<option value="Consultoria Online"></option>	
+							  	<option value="Novas Parcerias"></option>
+							 	<option value="Dúvidas"></option>					  
+							</datalist>
+						<!--maxlenght define o quanto de caracteres maximos podem ser digitados-->
+						<textarea class="field" name="message" maxlength="500"  rows="6" cols="33" placeholder="Digite sua mensagem aqui."></textarea>
+						<input class="field" type="submit" value="Enviar">
+					</form>
+				</section>
+			</section>
+		</main>
+
+		<!--RODAPE COM AS REDES SOCIAIS-->
+		<footer class="redeSociais" id="idredeSociais">		
+			<a href="https://www.facebook.com/paulo.breidenbach" class="social-link">
+				<img src="img/icone_facebook.png" alt="Facebook Bach Arquitetura">
+			</a>
+			<a href="https://www.instagram.com/bacharquitetura/" class="social-link" >
+				<img src="img/icone_instagram.png" alt="Instagram Bach Arquitetura">
+			</a>
+			<a href="https://twitter.com/paulobach" class="social-link">
+				<img src="img/icone_twitter.png" alt="Twitter Bach Arquitetura">
+			</a>
+			<a href="https://www.behance.com/bacharquitetura/" class="social-link">
+				<img src="img/icone_behance.png" alt="Behance Bach Arquitetura">
+			</a>
+			<a href="https://www.issuu.com/paulobach/" class="social-link">
+				<img src="img/icone_issuu.png" alt="Issuu Bach Arquitetura">
+			</a>
+		</footer>
+
+		<!-- 
+		Menu de navegação começa embaixo e ao descer na pagina ativa a função e a classe sticky, 
+		que ira grudar o Menu no topo da página.
+		 -->
+		<script>
+		window.onscroll = function() {myFunction()};
+		var header = document.getElementById("navBar");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+		    header.classList.add("sticky");
+		  } else {
+		    header.classList.remove("sticky");
+		  }
+		}
+
+		// Script do mapa, center mostra onde vai estar centralizado e Zoom é o qnto prox vai estar //
+		
+		function myMap() {
+			// Localização do escritorio
+			var bacharq = {lat: -30.035464, lng: -51.203932};
+			// O mapa centralizado no escritorio
+		 	var map = new google.maps.Map(
+		      document.getElementById('googleMap'), {zoom: 15, center: bacharq});
+		 	// Marcação, posicionada no escritorio
+			var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+		
+		</script>
+
+	<!-- Fecha o container da pagina -->
+	</div>
+</body>
+</html>

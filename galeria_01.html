@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Bach Arquitetura</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">	
+</head>
+<body>
+	<div id="container">			
+		<nav class="menu_principalGaleria" id="navBar">
+			<ul class="itens_menu">
+				<!--LOGO ou apenas o nome do arquiteto-->
+				<li class="item_menu"><a href="index.html"><img id="logo" src="img/logoHome.jpg"  alt="logodoSite" title="Home"></a></li>
+				<li class="menu-separatorGaleria item_menu">•</li>
+				<li class="item_menu"><a href="index.html#idProjetos">PROJETOS</a></li>
+				<li class="item_menu"><a href="index.html#idSobre">SOBRE</a></li>
+				<li class="item_menu"><a href="index.html#idContato">CONTATO</a></li>			
+			</ul>
+		</nav>	
+		
+		<main class="galeria">
+			<!--Caixinha com a descrição do Projeto -->
+			<article class="DescricaoProjeto">
+				<h3 class="descricaoTitulo">RESIDÊNCIAS JAZZ</h3>
+				<p>As Residências Jazz, são casas geminadas com atelier que buscam atender as demandas de duas famílias que desejam Habitar e trabalhar no 4º Distrito de Porto Alegre.<br><br>Essa região é conhecida por ter sido a área industrial da capital gaúcha. Visto isso, os materiais utilizados, como a alvenaria aparente e placas metálicas, remetem às origens do bairro, porém de maneira acolhedora.</p>
+			</article>
+		
+			<!--Lista com as img em miniaturas -->
+			<figure class="minGaleria">
+			<!-- Lista com os itens direcionado para div lbox -->
+				<ul id="idLista">
+					<li><a href="#img1"><img src="img/galeria_1/1_1.jpg" class="min" alt="Fachada"></a></li>
+					<li><a href="#img2"><img src="img/galeria_1/1_2.jpg" class="min" alt="Pátio Interno"></a></li>
+					<li><a href="#img3"><img src="img/galeria_1/1_3.jpg" class="min" alt="Pátio Externo"></a></li>
+					<li><a href="#img4"><img src="img/galeria_1/1_4.jpg" class="min" alt="Pátio Cobertura"></a></li>
+					<li><a href="#img5"><img src="img/galeria_1/1_5.jpg" class="min" alt="Cozinha"></a></li>
+					<li><a href="#img6"><img src="img/galeria_1/1_6.jpg" class="min" alt="Sala"></a></li>
+					<li><a href="#img7"><img src="img/galeria_1/1_7.jpg" class="min" alt="Atelier"></a></li>
+					<li><a href="#img8"><img src="img/galeria_1/1_8.jpg" class="min" alt="Dormitório"></a></li>
+					<li><a href="#img9"><img src="img/galeria_1/1_9.jpg" class="min" alt="Térreo"></a></li>
+					<li><a href="#img10"><img src="img/galeria_1/1_10.jpg" class="min" alt="Segundo Pavimento"></a></li>
+					<li><a href="#img11"><img src="img/galeria_1/1_11.jpg" class="min" alt="Cobertura"></a></li>
+				</ul>
+			</figure>
+			
+			<!-- #######  Ligth box para cada imagem.#######   Primeira imagem -->
+			<div class="lbox" id="img1">
+				<div class="box_img">
+					<a href="#img11" class="btn" id="prev">&#171;</a>
+					<!--O botão close fica sem link para ao clicar ele volte ao normal-->
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_1/1_1.jpg" alt="Fachada">
+					<!--O botão next ira direcionar para img 02 que esta localizada na lbox com id img2, existe varios com a mesma id para nao ter que reescrever para cada imagem no css-->
+					<a href="#img2" class="btn" id="next">&#187;</a>	
+				</div> 
+			</div>
+
+			<!-- Segunda imagem, tomando cuidado em modificar o id e o enderecamento -->
+			<div class="lbox" id="img2">
+				<div class="box_img">
+					<!--Sintaxe geral da declaração ASCII: &#número; -->
+					<a href="#img1" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_1/1_2.jpg" alt="Pátio Interno">
+					<a href="#img3" class="btn" id="next">&#187;</a>	
+				</div> 
+			</div>
+
+			<!-- Terceira imagem-->
+			<div class="lbox" id="img3">
+				<div class="box_img">
+					<a href="#img2" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_1/1_3.jpg" alt="Pátio Externo">
+					<a href="#img4" class="btn" id="next">&#187;</a>	
+				</div> 
+			</div>
+
+			<!-- Quarta imagem -->
+			<div class="lbox" id="img4">
+				<div class="box_img">
+					<a href="#img3" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_1/1_4.jpg" alt="Pátio Cobertura">
+					<a href="#img5" class="btn" id="next">&#187;</a>	
+				</div> 
+			</div>
+
+			<!-- Quinta imagem -->
+			<div class="lbox" id="img5">
+				<div class="box_img">
+					<a href="#img4" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_1/1_5.jpg" alt="Cozinha">
+					<a href="#img6" class="btn" id="next">&#187;</a>
+				</div> 
+			</div>
+
+			<!-- Sexta imagem -->
+			<div class="lbox" id="img6">
+				<div class="box_img">
+					<a href="#img5" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_1/1_6.jpg" alt="Sala">
+					<a href="#img7" class="btn" id="next">&#187;</a>
+				</div> 
+			</div>
+
+			<!-- Setima imagem -->
+			<div class="lbox" id="img7">
+				<div class="box_img">
+					<a href="#img6" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_1/1_7.jpg" alt="Atelier">
+					<a href="#img8" class="btn" id="next">&#187;</a>
+				</div> 
+			</div>
+
+			<!-- Oitava imagem -->
+			<div class="lbox" id="img8">
+				<div class="box_img">
+					<a href="#img7" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_1/1_8.jpg" alt="Dormitório">
+					<a href="#img9" class="btn" id="next">&#187;</a>
+				</div> 
+			</div>
+
+			<!-- Nona imagem -->
+			<div class="lbox" id="img9">
+				<div class="box_img">
+					<a href="#img8" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_1/1_9.jpg" alt="Térreo">
+					<a href="#img10" class="btn" id="next">&#187;</a>
+				</div> 
+			</div>
+
+			<!-- Decima imagem -->
+			<div class="lbox" id="img10">
+				<div class="box_img">
+					<a href="#img9" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_1/1_10.jpg" alt="Segundo Pavimento">
+					<a href="#img11" class="btn" id="next">&#187;</a>
+				</div> 
+			</div>
+
+			<!-- Decima primeira imagem -->
+			<div class="lbox" id="img11">
+				<div class="box_img">
+					<a href="#img10" class="btn" id="prev">&#171;</a>
+					<a href="" class="btn" id="close">X</a>
+					<img src="img/galeria_1/1_11.jpg" alt="Cobertura">
+					<a href="#img1" class="btn" id="next">&#187;</a>
+				</div> 
+			</div>
+
+		</main>
+
+		<!-- REDES SOCIAIS -->
+		
+		<footer class="redeSociais" id="idredeSociais">		
+
+			<a href="https://www.facebook.com/paulo.breidenbach" class="social-link">
+				<img src="img/icone_facebook.png" alt="Facebook Bach Arquitetura">
+			</a>
+			<a href="https://www.instagram.com/bacharquitetura/" class="social-link" >
+				<img src="img/icone_instagram.png" alt="Instagram Bach Arquitetura">
+			</a>
+			<a href="https://twitter.com/paulobach" class="social-link">
+				<img src="img/icone_twitter.png" alt="Twitter Bach Arquitetura">
+			</a>
+			<a href="https://www.behance.com/bacharquitetura/" class="social-link">
+				<img src="img/icone_behance.png" alt="Behance Bach Arquitetura">
+			</a>
+			<a href="https://www.issuu.com/paulobach/" class="social-link">
+				<img src="img/icone_issuu.png" alt="Issuu Bach Arquitetura">
+			</a>
+		</footer>
+	</div>
+</body>
+</html>

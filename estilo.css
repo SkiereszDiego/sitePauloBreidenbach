@@ -1,0 +1,463 @@
+/*
+-- Padrão do site
+*/
+/*Esse seletor * representa todos os elementos serão afetados pelas definições de estilo ali colocadas.*/
+* {
+	/*
+  se usar a unidade 'em' ao invez de 'px' ele vai pegar o padrao do site, pex 1em igual a 16px 2em igual 32.
+  Comecar com fontes que eu quero e no final colocar a fonte mais generica possivel.
+  */
+  font-family: 'Poppins','Century gothic', 'sans-serif';
+	padding: 0;
+	margin:0;
+	line-height: normal;
+}
+/*Caixa que vai englobar todo o site*/
+.container{
+  background-image: url("../img/bgProjetos.jpg");
+  background-size: cover;
+  min-width: 500px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Titulo de cada seção em negrito*/
+h1{
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  line-height: normal;
+  color: #fff;
+}
+
+/*Titulo do texto ao lado das imagens em negrito*/
+h3{
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: justify;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
+
+/*Paragrafos de texto*/
+p{
+  font-size: 16px;
+  font-weight: 200;
+}
+   
+/*Caixinha dos titulos de cada seção, criados para conseguir colocar no lado oposto ao paragrafo*/
+.frameTitulo{
+  text-align: center;
+  background-color: #0f0f0f;
+  width: 15%;
+  height: 10vh;
+  /*As figuras e os textos vai ficar ao redor desta caixa e ele sempre vai se colocar ao maximo para esquerda*/
+  float: left;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/*
+CABEÇALHO E BARRA DE NAVEGAÇÃO
+*/
+
+.headerPrincipal {
+  /*Não esquecer de usar ../ se estiver em uma pasta abaixo*/
+  background-image: url("../img/bghome.jpg");
+  /*100vh será a pagina toda da tela, deixei menor para aparecer o menu de navegação*/
+  height: 91vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*auto deixa a imagem no tamanho original e cover faz a imagem completar todo fundo*/
+  background-size: cover;
+}
+
+/*
+Criei esse separador para que os outros link da barra de navegação fossem tratatos como um grupo 
+e ficassem do outro lado do logo.
+*/
+.menu-separator {
+  color: #0f0f0f;
+  margin-left: 250px;
+  margin-right: 250px;
+  visibility: hidden;
+}
+
+/*Caixinha de fundo do menu navegação*/
+.menu_principal {
+  width: 100%; /* toda tela */
+  height: 10%;
+  background-color: #0f0f0f; /* Cor Cinza carvão do background do menu */
+}
+
+/*todos os elementos do menu*/
+.item_menu {
+  text-align: right;
+  width: 10%; /* Espaçamento igual entre os links */
+  list-style-type: none;
+  display: inline-block; /*Alinhar horizontalmente*/
+}
+
+/*Cada link do menu*/
+.item_menu a {
+  transition: all 0.3s ease; /* adiciona transicao para efeito hover */
+  height: 100%;
+  color: white; /* Cor branca para o texto*/
+  font-size: 20px;
+  float: right;
+  text-decoration: none;
+}
+
+/*Logo do site e Home*/
+#logo{
+  vertical-align: top;
+  border: 0;
+  width: 90px;
+  height: 50px;
+  float:left;
+  margin-left: 5%;
+  margin-right: 10px;
+ }
+
+/* Quando passar o mouse sobre o link aparece uma borda branca em cima*/
+.menu_principal a:hover {
+  border-top: 4px solid #fff;
+}
+
+/* Quando passar o mouse sobre o link aparece uma borda branca em cima*/
+.menu_principal a {
+  border-top: 4px solid transparent;
+}
+
+/* Quando estiver selecionado */
+.menu_principal a:active {
+  border-top: 4px solid #fff;
+}
+
+/*Efeito para grudar o menu de navegação qndo chegar no topo*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/*
+FRASE
+*/
+/*Seção englobando a pagina e um pouco a mais para que o menu de nav se encaixe*/
+.frase-title {
+	background-color: #0f0f0f;
+	width: 100%;
+  height: 105vh;  
+}
+/*Frase com a visão do arquiteto*/
+#idFrase p{
+  width: 60%;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 250px;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/*
+PROJETOS
+*/
+
+/*Imagem de fundo da seção de Projetos*/
+.menuProjetos {
+  background-image: url("../img/bgProjetos.jpg");
+  width: 100%;
+  height: 100vh;
+}
+
+/*Imagens com os links para as galerias*/
+.projetos img{
+  vertical-align: middle;
+  width: 200px;
+  height:500px;
+}
+
+/*Disposição das imagens*/
+.projetos li{
+  padding: 10px;
+  padding-top: 160px;
+  padding-bottom: 30px;
+  margin: 5px auto;
+  float:right;
+  
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/*
+SOBRE
+*/
+
+/*Fundo da seção do Sobre*/
+.sobre-title{
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+}
+/*Controlar o formatação do texto e posição*/
+.sobre-text {
+  width: 30%;
+  text-align: center;
+  font-weight: 300;
+  margin-right: 10%;
+  margin-top: 20%;
+  float: right;
+}
+
+/*Controlar o tamanho da imagem e posição*/
+#figuraSobre img{
+  width: 30%;
+  float:left;
+  margin-top: 150px;
+  margin-left: 0px;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/*
+CONTATO
+*/
+
+/*Fundo da seção de contato*/
+.content{
+  background-color: #263f59;
+  width: 100%;
+  height: 89vh;
+}
+/*Formatação da janela do google map*/
+#googleMap {
+  width: 30%;
+  height: 61%;
+  float:left;
+  margin-top: 158px;
+  margin-left: 10px;
+}
+
+/*
+-- FORMULARIO
+*/
+
+.form {
+  /*Uma caixa organizadora tornando todos itens dentro dela como flex itens*/
+  display: flex; 
+  flex-direction: column;
+  float: right;
+  width: 100%;
+  /*Posição do meu formulario*/
+  margin-top: 150px;
+  margin-right: 50px;
+}
+
+/*Formatação dentro dos campos*/
+.field {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/*Tamanho do campo de mensagem*/
+.textarea{
+  height: 150px;
+}
+
+.posicaoForm{
+  padding: 10px 200px 20px 50px; /* top,right,bottom,left */
+  float:right;
+  width:30%;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/*
+-- REDES SOCIAIS
+*/
+/*Fundo da seção de redes sociais*/
+.redeSociais {
+  background: #0f0f0f;
+  width: 100%;
+  text-align: center;
+}
+
+/*Utilizando seletor descendente para modificar as img com os links*/
+.redeSociais img {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+
+.social-link {
+  display: inline-block;
+  height: 60px;
+  width: 30px;
+  /*Disposição vertical das imgs*/
+  line-height: 80px;
+  padding-left: 5px;
+  padding-right: 10px;
+  margin-bottom: 25px;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/*
+-- GALERIAS
+*/
+
+/*Menu de navegação igual porem com classe diferente para os link de seções voltarem para a pagina inicial*/
+.menu-separatorGaleria {
+  color: #0f0f0f;
+  margin-left: 250px;
+  margin-right: 250px;
+  visibility: hidden;
+  padding-bottom: 20px;
+ }
+
+.menu_principalGaleria {
+  width: 100%; /* toda tela */
+  background-color: #0f0f0f; /* Cor Cinza carvão do background do menu */
+}
+
+/*Corpo a galeria*/
+.galeria {
+  background-image: url("../img/bgProjetos.jpg");
+  width: 100%;
+  
+  background-position: center;
+  /*auto deixa a imagem no tamanho original*/
+  background-size: auto;
+}
+
+/*Caixinha ao lado das imagens para descrever o projeto*/
+.DescricaoProjeto{
+  background-color: #0f0f0f;
+  margin-top: 15px;
+  width: 30%;
+  height: 645px;
+  float: left;
+}
+
+/*Texto ao lado das imagens para descrever o projeto*/
+.DescricaoProjeto p{
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: justify;
+  font-size: 16px;
+  color: white;
+}
+
+/*
+LIGTHBOX --Tutorial de Lightbox pego do video: https://www.youtube.com/watch?v=jiS1hxKfFyY
+*/
+
+/*Configuracao inicial da ligthbox*/
+.lbox{
+  visibility: hidden;
+  opacity: 0;
+  /*Esconde os slides na pagina*/
+  display: none;
+}
+
+
+/*Utilizar a pseudoclasse target, mudando as confg da ligthbox*/
+.lbox:target{
+  opacity: 1;
+  visibility: visible;
+  /*quando clicar o slided volta se comportanto como tabela */
+  display: table;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(10,10,10,.7);
+  position: fixed;
+}
+
+/*Configuracoes da lista de imgs*/
+#idLista{
+  width: 62%;
+  list-style: none;
+  display: flex;
+  /*Gera quebra de linha*/
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#idLista li {
+  flex:0 1 200px;
+  padding: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 5px auto;
+}
+
+/*Configuracoes das miniaturas*/
+.min{
+  width: 150%;
+  float: right;
+}
+
+/*Configuração da box com img grande*/
+.box_img{
+  width: 1000px;
+  /*posicionamento dela*/
+  margin: 50px auto;
+}
+
+/*Config. dos Botões*/
+.btn{
+  color:#fff;
+  font-family: 'Arial';
+  text-decoration: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;   
+}
+
+/*Agora posicionamento de cada um dos botoes*/
+#prev{
+  left: 5%;
+  top: 45%;
+}
+#next{
+  right: 5%;
+  top: 45%;
+}
+#close{
+  top: 0;
+  right: 2%
+}
+
+/*Efeito de transicao*/
+.box_img img{
+  /*Inicialmente*/
+  opacity: 0;
+}
+/*
+A alteração que vai acontecer a opacidade vai passar a ser 1.
+Transition alterando a opacidade que terá duracao de 4 segundos e a curva será linear
+*/
+.lbox:target .box_img img{
+  opacity: 1;
+  transition: opacity .3s linear;
+}
+
+
+
